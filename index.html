@@ -63,3 +63,69 @@
     <script src="scripts.js"></script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Proyecto de Compras en Línea</h1>
+    </header>
+
+    <main id="vista-carrito" class="vista">
+      <h2>Carrito de Compras</h2>
+      <table id="compra-actual">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Productos seleccionados -->
+        </tbody>
+      </table>
+      <div id="resumen-compra">
+        <p>Total de Productos: <span id="total-productos"></span></p>
+        <p>Total de la Compra: <span id="total-compra"></span></p>
+        <p>Costo de Domicilio: <span id="costo-domicilio">$15,000</span></p>
+      </div>
+      <div id="tarjeta-credito">
+        <h3>Información de Tarjeta de Crédito</h3>
+        <form id="form-tarjeta">
+          <label for="numero-tarjeta">Número de Tarjeta:</label>
+          <input type="text" id="numero-tarjeta" required />
+
+          <label for="expiracion">Fecha de Expiración (MM/AA):</label>
+          <input type="text" id="expiracion" required />
+
+          <label for="codigo-seguridad">Código de Seguridad:</label>
+          <input type="password" id="codigo-seguridad" maxlength="3" required />
+
+          <label for="nombre-titular">Nombre del Titular:</label>
+          <input type="text" id="nombre-titular" required />
+
+          <button type="submit" id="confirmar-compra">Confirmar Compra</button>
+          <button type="reset">Limpiar Campos</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 Proyecto de Compras en Línea. Glambyte Store. Tienda
+        Virtual.
+      </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
