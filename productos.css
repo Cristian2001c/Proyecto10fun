@@ -67,13 +67,12 @@ button:hover {
   background-color: #6a1b9a;
 }
 
-/* tarjetas de productos */
-.producto-tarjeta {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.producto-tarjeta img {
+  max-width: 150px; /* Define un ancho máximo */
+  max-height: 150px; /* Define una altura máxima */
+  object-fit: contain; /* Ajusta la imagen sin deformarla */
+  margin: 0 auto; /* Centra la imagen */
+  display: block; /* Hace que la imagen se comporte como un bloque */
 }
 
 .grid-tarjetas {

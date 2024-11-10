@@ -4,10 +4,10 @@ const productos = [
   {
     id: 1,
     nombre: "Auriculares inalámbricos con cancelación de ruido",
-    precio: 120000,
+    precio: 80000,
     categoria: "Periféricos y Audio",
     stock: 30,
-    url: "./imagenes/Auriculares1.jpg",
+    url: "https://i.pinimg.com/564x/fa/5c/b1/fa5cb10ffd836f76169dd750ae1ccb4c.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const productos = [
     precio: 95000,
     categoria: "Periféricos y Audio",
     stock: 20,
-    url: "https://i.pinimg.com/564x/36/4c/aa/364caad8bbcc0681cc7179d85d38e228.jpg",
+    url: "https://i.pinimg.com/564x/77/ca/6b/77ca6bd2f92ab1b4d7d7b7c9b47c4d9b.jpg",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const productos = [
     precio: 40000,
     categoria: "Periféricos y Audio",
     stock: 50,
-    url: "https://static.vecteezy.com/system/resources/thumbnails/036/709/536/small_2x/ai-generated-skull-dj-with-headphones-and-turntable-illustration-on-transparent-background-png.png",
+    url: "https://i.pinimg.com/564x/ab/99/0e/ab990e1f5e8aa8acf91dc2db439c615f.jpg",
   },
   {
     id: 4,
@@ -31,23 +31,23 @@ const productos = [
     precio: 70000,
     categoria: "Periféricos y Audio",
     stock: 25,
-    url: "./imagenes/default.jpg", // Cambiado
+    url: "https://i.pinimg.com/564x/cb/22/5f/cb225fd33df8f97f3a066cae8c833d05.jpg",
   },
   {
     id: 5,
     nombre: "Micrófono USB para streaming",
-    precio: 80000,
+    precio: 110000,
     categoria: "Periféricos y Audio",
     stock: 15,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/7b/37/46/7b3746f717ebf9a6c00d382734f08036.jpg",
   },
   {
     id: 6,
     nombre: "Auriculares deportivos resistentes al agua",
-    precio: 45000,
+    precio: 75000,
     categoria: "Periféricos y Audio",
     stock: 40,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/db/2f/50/db2f507cd044df98fa7dc09aa1dcb879.jpg",
   },
   {
     id: 7,
@@ -55,15 +55,15 @@ const productos = [
     precio: 150000,
     categoria: "Periféricos y Audio",
     stock: 10,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/a3/6e/6e/a36e6e7984dd21dfa57a9dfaa4e93dc2.jpg",
   },
   {
     id: 8,
     nombre: "Auriculares gaming con micrófono integrado",
-    precio: 60000,
+    precio: 90000,
     categoria: "Periféricos y Audio",
     stock: 35,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/23/a5/6a/23a56ac9a2f61c4ce77cd161fca2fc78.jpg",
   },
   {
     id: 9,
@@ -323,6 +323,12 @@ const productos = [
   },
 ];
 
+const versionActual = "1.1"; // Cambia este valor cada vez que actualices los productos
+
+if (localStorage.getItem("versionProductos") !== versionActual) {
+  localStorage.setItem("productos", JSON.stringify(productos));
+  localStorage.setItem("versionProductos", versionActual);
+}
 // Guardar los productos en el localStorage si no existen
 if (!localStorage.getItem("productos")) {
   localStorage.setItem("productos", JSON.stringify(productos));
@@ -478,6 +484,6 @@ function manejarProductos() {
 
   // Cancelar compra y volver a la vista de requerimientos
   document.getElementById("cancelar-compra").addEventListener("click", () => {
-    window.location.href = "requerimientos.html";
+    window.location.href = "index.html";
   });
 }
