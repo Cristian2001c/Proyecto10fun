@@ -4,8 +4,8 @@
   "description": "A template for HTML and CSS",
   "main": "index.html",
   "scripts": {
-    "start": "serve -l 5000"
-},
+    "start": "serve"
+  },
   "keywords": [
     "html",
     "css"

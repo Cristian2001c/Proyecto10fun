@@ -3,56 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Productos</title>
+    <title>Requerimientos de Compra</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Proyecto de Compras en Línea</h1>
+      <h1>GlamByte S'tore</h1>
+      <h3>Tienda Virtual</h3>
     </header>
 
-    <main id="vista-productos" class="vista">
-      <h2>Lista de Productos</h2>
-
-      <!-- Sección de productos cargados dinámicamente -->
-      <div id="seccion-productos" class="scroll-infinito">
-        <!-- Los productos se cargarán aquí mediante JavaScript -->
-      </div>
-
-      <!-- Sección para mostrar los detalles del producto seleccionado -->
-      <div id="ver-detalle">
-        <h3>Detalles del Producto</h3>
-        <div id="detalle-producto">
-          <!-- Los detalles del producto se mostrarán aquí -->
+    <main>
+      <form id="form-requerimientos">
+        <div class="campo">
+          <label for="nombre-comprador">Nombre del Comprador:</label>
+          <input type="text" id="nombre-comprador" maxlength="20" required />
         </div>
-        <label for="cantidad-producto">Cantidad:</label>
-        <input type="number" id="cantidad-producto" min="1" required />
-        <button id="agregar-carrito">Agregar al Carrito</button>
-      </div>
 
-      <!-- Filtros para productos -->
-      <div id="filtros">
-        <h3>Filtrar Productos</h3>
-        <select id="filtro-categoria">
-          <option value="">Selecciona Categoría</option>
-          <option value="Periféricos y Audio">Periféricos y Audio</option>
-          <option value="Soportes y Conectividad">
-            Soportes y Conectividad
-          </option>
-        </select>
-        <input
-          type="text"
-          id="filtro-nombre"
-          placeholder="Buscar por nombre..."
-        />
-        <button id="filtrar">Filtrar</button>
-        <button id="limpiar-filtros">Limpiar Filtros</button>
-      </div>
+        <div class="campo">
+          <label for="presupuesto-maximo">Presupuesto Máximo (COP):</label>
+          <input type="number" id="presupuesto-maximo" min="0" required />
+        </div>
 
-      <nav>
-        <button id="cancelar-compra">Cancelar Compra</button>
-        <button id="completar-compra">Completar Compra</button>
-      </nav>
+        <div class="campo">
+          <label for="cantidad-maxima">Cantidad Máxima de Artículos:</label>
+          <input type="number" id="cantidad-maxima" min="1" max="20" required />
+        </div>
+
+        <div class="campo">
+          <label for="direccion">Dirección de Entrega:</label>
+          <input type="text" id="direccion" required />
+        </div>
+
+        <div class="campo">
+          <label>Tipo de Entrega:</label>
+          <label>
+            <input
+              type="radio"
+              name="tipo-entrega"
+              value="domicilio"
+              required
+            />
+            Domicilio
+          </label>
+          <label>
+            <input type="radio" name="tipo-entrega" value="recoger" required />
+            Recoger en tienda
+          </label>
+        </div>
+
+        <div class="botones">
+          <button type="button" id="iniciar-compra">Iniciar Compra</button>
+          <button type="reset">Limpiar Campos</button>
+        </div>
+
+        <p id="mensaje-error" style="color: red; display: none"></p>
+      </form>
     </main>
 
     <footer>
@@ -61,9 +66,6 @@
       </p>
     </footer>
 
-    <!-- Enlace al archivo JavaScript -->
     <script src="scripts.js"></script>
   </body>
 </html>
-
-<script src="scripts.js"></script>
