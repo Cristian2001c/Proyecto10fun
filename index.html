@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrito de Compras</title>
+    <title>Lista de Productos</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,55 +11,59 @@
       <h1>Proyecto de Compras en Línea</h1>
     </header>
 
-    <main id="vista-carrito" class="vista">
-      <h2>Carrito de Compras</h2>
-      <table id="compra-actual">
-        <thead>
-          <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Precio</th>
-            <th>Total</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Productos seleccionados-->
-        </tbody>
-      </table>
-      <div id="resumen-compra">
-        <p>Total de Productos: <span id="total-productos"></span></p>
-        <p>Total de la Compra: <span id="total-compra"></span></p>
-        <p>Costo de Domicilio: <span id="costo-domicilio">$15,000</span></p>
+    <main id="vista-productos" class="vista">
+      <h2>Lista de Productos</h2>
+
+      <!-- Sección de productos cargados dinámicamente -->
+      <div id="seccion-productos" class="scroll-infinito">
+        <!-- Los productos se cargarán aquí mediante JavaScript -->
       </div>
-      <div id="tarjeta-credito">
-        <h3>Información de Tarjeta de Crédito</h3>
-        <form id="form-tarjeta">
-          <label for="numero-tarjeta">Número de Tarjeta:</label>
-          <input type="text" id="numero-tarjeta" required />
 
-          <label for="expiracion">Fecha de Expiración (MM/AA):</label>
-          <input type="text" id="expiracion" required />
-
-          <label for="codigo-seguridad">Código de Seguridad:</label>
-          <input type="password" id="codigo-seguridad" maxlength="3" required />
-
-          <label for="nombre-titular">Nombre del Titular:</label>
-          <input type="text" id="nombre-titular" required />
-
-          <button type="submit" id="confirmar-compra">Confirmar Compra</button>
-          <button type="reset">Limpiar Campos</button>
-        </form>
+      <!-- Sección para mostrar los detalles del producto seleccionado -->
+      <div id="ver-detalle">
+        <h3>Detalles del Producto</h3>
+        <div id="detalle-producto">
+          <!-- Los detalles del producto se mostrarán aquí -->
+        </div>
+        <label for="cantidad-producto">Cantidad:</label>
+        <input type="number" id="cantidad-producto" min="1" required />
+        <button id="agregar-carrito">Agregar al Carrito</button>
       </div>
+
+      <!-- Filtros para productos -->
+      <div id="filtros">
+        <h3>Filtrar Productos</h3>
+        <select id="filtro-categoria">
+          <option value="">Selecciona Categoría</option>
+          <option value="Periféricos y Audio">Periféricos y Audio</option>
+          <option value="Soportes y Conectividad">
+            Soportes y Conectividad
+          </option>
+        </select>
+        <input
+          type="text"
+          id="filtro-nombre"
+          placeholder="Buscar por nombre..."
+        />
+        <button id="filtrar">Filtrar</button>
+        <button id="limpiar-filtros">Limpiar Filtros</button>
+      </div>
+
+      <nav>
+        <button id="cancelar-compra">Cancelar Compra</button>
+        <button id="completar-compra">Completar Compra</button>
+      </nav>
     </main>
 
     <footer>
       <p>
-        &copy; 2024 Proyecto de Compras en Línea. Glambyte Store. Tienda
-        Virtual.
+        &copy; 2024 Proyecto de Compras en Línea. Todos los derechos reservados.
       </p>
     </footer>
 
+    <!-- Enlace al archivo JavaScript -->
     <script src="scripts.js"></script>
   </body>
 </html>
+
+<script src="scripts.js"></script>

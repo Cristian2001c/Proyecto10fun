@@ -1,3 +1,4 @@
+// Definir la lista completa de productos
 const accesoriosPerifericosYAudio = [
   {
     id: 1,
@@ -320,3 +321,17 @@ const accesoriosPerifericosYAudio = [
     url: "imagen del producto",
   },
 ];
+
+// Función para guardar productos en el Local Storage
+function guardarProductosEnLocalStorage() {
+  // Verificar si los productos ya están en Local Storage
+  if (!localStorage.getItem("productos")) {
+    localStorage.setItem(
+      "productos",
+      JSON.stringify(accesoriosPerifericosYAudio)
+    );
+    console.log("Productos guardados en Local Storage");
+  } else {
+    console.log("Los productos ya existen en Local Storage");
+  }
+}
