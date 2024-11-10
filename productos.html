@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="productos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GlamByte S'tore</h1>
+    </header>
+
+    <main class="vista">
+      <!-- Contenedor de productos y detalles alineados en una sola fila -->
+      <div id="contenedor-productos">
+        <!-- Sección de productos con tarjetas -->
+        <div id="tarjetas-productos">
+          <h2>Filtrar Productos</h2>
+          <!-- Filtros para filtrar productos por categoría o nombre -->
+          <div id="filtros">
+            <div class="filtros-contenedor">
+              <select id="filtro-categoria">
+                <option value="">Selecciona Categoría</option>
+                <option value="Periféricos y Audio">Periféricos y Audio</option>
+                <option value="Soportes y Conectividad">
+                  Soportes y Conectividad
+                </option>
+              </select>
+              <input
+                type="text"
+                id="filtro-nombre"
+                placeholder="Buscar por nombre..."
+              />
+              <button id="filtrar">Filtrar</button>
+              <button id="limpiar-filtros">Limpiar Filtros</button>
+            </div>
+          </div>
+
+          <!-- Contenedor de tarjetas de productos -->
+          <div id="contenedor-tarjetas" class="grid-tarjetas">
+            <!-- Las tarjetas de productos se cargarán aquí mediante JavaScript -->
+          </div>
+        </div>
+
+        <!-- Detalles del producto seleccionado -->
+        <div id="ver-detalle" style="display: none">
+          <h3>Detalles del Producto</h3>
+          <!-- Imagen del producto -->
+          <img
+            id="imagen-detalle"
+            alt="Imagen del producto"
+            class="imagen-detalle"
+          />
+          <div id="detalle-producto"></div>
+          <label for="cantidad-producto">Cantidad:</label>
+          <input
+            type="number"
+            id="cantidad-producto"
+            min="1"
+            value="1"
+            required
+          />
+          <button id="agregar-carrito">Agregar al Carrito</button>
+
+          <!-- Navegación inferior para acciones, justo debajo de los detalles -->
+          <nav id="acciones-compra">
+            <button id="cancelar-compra">Cancelar Compra</button>
+            <button id="completar-compra">Completar Compra</button>
+          </nav>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Tienda Virtual. GlamByte S'tore.</p>
+    </footer>
+
+    <script src="productos.js"></script>
+  </body>
+</html>

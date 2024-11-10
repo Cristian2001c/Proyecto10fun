@@ -1,0 +1,83 @@
+/* estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* encabezado */
+header {
+  background-color: #4a148c;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* contenedor principal */
+.vista {
+  padding: 20px;
+}
+
+/* filtros */
+#filtros {
+  margin-bottom: 20px;
+}
+
+.filtros-contenedor {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* contenedor de productos */
+#contenedor-productos {
+  display: flex;
+  gap: 20px;
+}
+
+#tarjetas-productos {
+  flex: 2;
+}
+
+/* detalles del producto */
+#ver-detalle {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-detalle {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #4a148c;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6a1b9a;
+}
+
+/* tarjetas de productos */
+.producto-tarjeta {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
