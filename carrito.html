@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css" />
+  </head>
+  <body>
+    <header class="encabezado-principal">
+      <h1>Carrito de Compras</h1>
+    </header>
+
+    <main class="vista-carrito">
+      <!-- Sección izquierda: Tabla de productos seleccionados -->
+      <section class="seccion-izquierda">
+        <h2>Productos Seleccionados</h2>
+        <table id="tabla-carrito">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo-tabla-carrito">
+            <!-- Los productos se cargarán aquí mediante JavaScript -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Sección derecha: Resumen de compra y datos de tarjeta -->
+      <section class="seccion-derecha">
+        <h2>Resumen de Compra</h2>
+        <p>Total de Productos: <span id="total-productos">0</span></p>
+        <p>Total de la Compra: <span id="total-compra">$0</span></p>
+        <p>Cargo por Domicilio: $15,000</p>
+        <p>Total Final: <span id="total-final">$0</span></p>
+
+        <!-- Botones para acciones -->
+        <button
+          onclick="window.location.href='productos.html'"
+          class="btn-seguir-comprando"
+        >
+          Seguir Comprando
+        </button>
+
+        <button id="btn-cancelar-compra" class="btn-cancelar">
+          Cancelar Compra
+        </button>
+
+        <h2>Información de Tarjeta de Crédito</h2>
+        <form id="form-tarjeta" class="form-tarjeta">
+          <div class="campo-form">
+            <label for="numero-tarjeta">Número de Tarjeta:</label>
+            <input
+              type="text"
+              id="numero-tarjeta"
+              pattern="[0-9]{16}"
+              title="Debe contener 16 dígitos numéricos"
+              required
+            />
+          </div>
+
+          <div class="campo-form">
+            <label for="fecha-expiracion">Fecha de Expiración (MM/AA):</label>
+            <input
+              type="text"
+              id="fecha-expiracion"
+              pattern="\d{2}/\d{2}"
+              title="Formato MM/AA, e.g., 12/25"
+              required
+            />
+          </div>
+
+          <div class="campo-form">
+            <label for="cvv">CVV:</label>
+            <input
+              type="password"
+              id="cvv"
+              maxlength="3"
+              pattern="\d{3}"
+              title="Debe contener 3 dígitos"
+              required
+            />
+          </div>
+
+          <div class="campo-form">
+            <label for="nombre-titular">Nombre del Titular:</label>
+            <input type="text" id="nombre-titular" required />
+          </div>
+
+          <div class="campo-form">
+            <label for="pais-emision">País de Emisión:</label>
+            <select id="pais-emision" required>
+              <option value="">Selecciona un país</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+              <option value="Brasil">Brasil</option>
+              <option value="México">México</option>
+              <option value="Perú">Perú</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Ecuador">Ecuador</option>
+            </select>
+          </div>
+
+          <div class="campo-form">
+            <label for="tipo-tarjeta">Tipo de Tarjeta:</label>
+            <select id="tipo-tarjeta" required>
+              <option value="">Selecciona el tipo</option>
+              <option value="Mastercard">Mastercard</option>
+              <option value="Visa">Visa</option>
+              <option value="Prepagada">Prepagada</option>
+            </select>
+          </div>
+
+          <div class="botones-formulario">
+            <button type="button" id="limpiar-form" class="btn-limpiar">
+              Limpiar
+            </button>
+            <button type="submit" id="confirmar-compra" class="btn-confirmar">
+              Confirmar Compra
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="carrito.js"></script>
+  </body>
+</html>

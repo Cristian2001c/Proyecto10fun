@@ -1,0 +1,313 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+header {
+  background-color: #5a189a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.vista-carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.seccion-izquierda {
+  flex: 2;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.seccion-izquierda h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabla-carrito th,
+#tabla-carrito td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#tabla-carrito th {
+  background-color: #5a189a;
+  color: #fff;
+}
+
+#tabla-carrito tr:hover {
+  background-color: #f1f1f1;
+}
+
+.eliminar-producto {
+  background-color: #dc2626;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.eliminar-producto:hover {
+  background-color: #b91c1c;
+}
+
+.seccion-derecha {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.seccion-derecha h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.seccion-derecha p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#cancelar-compra {
+  background-color: #dc2626;
+  color: #fff;
+}
+
+#cancelar-compra:hover {
+  background-color: #b91c1c;
+}
+
+#confirmar-compra {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+#confirmar-compra:hover {
+  background-color: #15803d;
+}
+
+#limpiar-form {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+#limpiar-form:hover {
+  background-color: #d97706;
+}
+
+button[type="button"] {
+  background-color: #5a189a;
+  color: #fff;
+  margin-right: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #3a0d80;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select,
+form input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form input[type="number"]:focus {
+  outline: none;
+  border-color: #5a189a;
+  box-shadow: 0 0 5px rgba(90, 24, 154, 0.5);
+}
+
+footer {
+  /* Estilo del encabezado principal */
+  .encabezado-principal {
+    text-align: center;
+    background-color: #4a148c; /* Un tono púrpura oscuro para el encabezado */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilo del encabezado principal */
+  .encabezado-principal h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  /* Estilo general del contenedor de la vista del carrito */
+  .vista-carrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  /* Sección izquierda - Tabla de productos */
+  .seccion-izquierda {
+    width: 60%;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+  }
+
+  /* Sección derecha - Resumen de compra */
+  .seccion-derecha {
+    width: 35%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  #tabla-carrito th,
+  #tabla-carrito td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #tabla-carrito th {
+    background-color: #4a148c; /* Púrpura oscuro */
+    color: white;
+  }
+
+  /* Estilos para los botones */
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  button#cancelar-compra {
+    background-color: #e53935; /* Rojo */
+    color: white;
+  }
+
+  button#confirmar-compra {
+    background-color: #43a047; /* Verde */
+    color: white;
+  }
+
+  button#limpiar-form {
+    background-color: #ffb300; /* Amarillo */
+    color: black;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+
+  /* Formulario de tarjeta de crédito */
+  .form-tarjeta {
+    margin-top: 20px;
+  }
+
+  .campo-form {
+    margin-bottom: 15px;
+  }
+
+  .campo-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .campo-form input,
+  .campo-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Estilo de la caja de resumen */
+  .seccion-derecha h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .botones-formulario {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  text-align: center;
+  padding: 10px 0;
+  background-color: #5a189a;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
