@@ -4,7 +4,8 @@
   "description": "A template for HTML and CSS",
   "main": "index.html",
   "scripts": {
-    "start": "serve"
+    "start": "serve -l 36839 --no-clipboard"
+    
   },
   "keywords": [
     "html",
