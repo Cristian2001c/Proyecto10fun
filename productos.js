@@ -87,7 +87,7 @@ const productos = [
     precio: 55000,
     categoria: "Periféricos y Audio",
     stock: 25,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/f9/20/06/f920067f7d78218df227e9faaf7529ea.jpg",
   },
   {
     id: 12,
@@ -95,7 +95,7 @@ const productos = [
     precio: 50000,
     categoria: "Periféricos y Audio",
     stock: 45,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/3c/b1/09/3cb1094e16851291d07fe02193b0f33e.jpg",
   },
   {
     id: 13,
@@ -103,7 +103,7 @@ const productos = [
     precio: 110000,
     categoria: "Periféricos y Audio",
     stock: 12,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/55/b0/f7/55b0f7aba1034340b7c1362bcde201e6.jpg",
   },
   {
     id: 14,
@@ -111,7 +111,7 @@ const productos = [
     precio: 20000,
     categoria: "Periféricos y Audio",
     stock: 50,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/7e/95/3a/7e953a5a5d86cbbc6ba0e66cb7b70745.jpg",
   },
   {
     id: 15,
@@ -119,7 +119,7 @@ const productos = [
     precio: 85000,
     categoria: "Periféricos y Audio",
     stock: 15,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/ad/6e/d2/ad6ed2d0d367928b3d56d561f3feb0f2.jpg",
   },
   {
     id: 16,
@@ -127,7 +127,7 @@ const productos = [
     precio: 30000,
     categoria: "Periféricos y Audio",
     stock: 60,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/34/da/3a/34da3a9b0c47d2cd0f1a48d77555da5e.jpg",
   },
   {
     id: 17,
@@ -135,7 +135,7 @@ const productos = [
     precio: 15000,
     categoria: "Periféricos y Audio",
     stock: 70,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/ac/38/c3/ac38c39532f22f27525c5f779fac1a43.jpg",
   },
   {
     id: 18,
@@ -143,7 +143,7 @@ const productos = [
     precio: 38000,
     categoria: "Periféricos y Audio",
     stock: 20,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/fd/9e/39/fd9e39ed8d7902941ef6126493ebd3b5.jpg",
   },
   {
     id: 19,
@@ -151,7 +151,7 @@ const productos = [
     precio: 75000,
     categoria: "Periféricos y Audio",
     stock: 25,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/b9/3b/75/b93b757144cf51caddd3eda9a134f7e3.jpg",
   },
   {
     id: 20,
@@ -159,7 +159,7 @@ const productos = [
     precio: 50000,
     categoria: "Periféricos y Audio",
     stock: 30,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/736x/70/8d/a6/708da6f6576c305a58018a6a10a0508e.jpg",
   },
   {
     id: 21,
@@ -167,7 +167,7 @@ const productos = [
     precio: 55000,
     categoria: "Soportes y Conectividad",
     stock: 20,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/51/34/c7/5134c77d63b78d0f59467f193b023781.jpg",
   },
   {
     id: 22,
@@ -175,7 +175,7 @@ const productos = [
     precio: 120000,
     categoria: "Soportes y Conectividad",
     stock: 15,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/7c/29/72/7c297261dbebacdfe9e0d049b442de88.jpg",
   },
   {
     id: 23,
@@ -183,7 +183,7 @@ const productos = [
     precio: 30000,
     categoria: "Soportes y Conectividad",
     stock: 25,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/c7/b8/1e/c7b81e8ee7f38b032d3ca642a4da519e.jpg",
   },
   {
     id: 24,
@@ -191,7 +191,7 @@ const productos = [
     precio: 60000,
     categoria: "Soportes y Conectividad",
     stock: 30,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/56/b2/fa/56b2fab4dd342579e73c9f80a29c0ccb.jpg",
   },
   {
     id: 25,
@@ -199,7 +199,7 @@ const productos = [
     precio: 20000,
     categoria: "Soportes y Conectividad",
     stock: 40,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/8d/fe/0e/8dfe0e4a7228545a400fb6d33c372008.jpg",
   },
   {
     id: 26,
@@ -207,7 +207,7 @@ const productos = [
     precio: 45000,
     categoria: "Soportes y Conectividad",
     stock: 35,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/736x/b2/f2/9e/b2f29e9e8daa16913f24713eade2536d.jpg",
   },
   {
     id: 27,
@@ -215,7 +215,7 @@ const productos = [
     precio: 80000,
     categoria: "Soportes y Conectividad",
     stock: 10,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/43/18/51/43185175bb45e048248ef516405e9dcb.jpg",
   },
   {
     id: 28,
@@ -223,7 +223,7 @@ const productos = [
     precio: 95000,
     categoria: "Soportes y Conectividad",
     stock: 20,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/ff/43/17/ff431707da50566015229e6314ca8469.jpg",
   },
   {
     id: 29,
@@ -231,7 +231,7 @@ const productos = [
     precio: 18000,
     categoria: "Soportes y Conectividad",
     stock: 50,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/89/1a/a2/891aa2f4d7a5635643f98837f0b76f15.jpg",
   },
   {
     id: 30,
@@ -239,15 +239,15 @@ const productos = [
     precio: 130000,
     categoria: "Soportes y Conectividad",
     stock: 12,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/48/31/0d/48310d08c337c052d3c47d1dbb8323f0.jpg",
   },
   {
     id: 31,
-    nombre: "Router WiFi de alta velocidad",
+    nombre: "Router Inalambrico WiFi de alta velocidad",
     precio: 150000,
     categoria: "Soportes y Conectividad",
     stock: 10,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/de/d7/7f/ded77fef62369baea6434b7bcf98dd71.jpg",
   },
   {
     id: 32,
