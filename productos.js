@@ -71,7 +71,7 @@ const productos = [
     precio: 35000,
     categoria: "Periféricos y Audio",
     stock: 30,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/75/ab/71/75ab71f1d923b9f060bee900380533fb.jpg",
   },
   {
     id: 10,
@@ -79,7 +79,7 @@ const productos = [
     precio: 90000,
     categoria: "Periféricos y Audio",
     stock: 20,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/6d/7f/48/6d7f48de32c73eb993febecf1dcdcc67.jpg",
   },
   {
     id: 11,
