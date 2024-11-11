@@ -255,7 +255,7 @@ const productos = [
     precio: 25000,
     categoria: "Soportes y Conectividad",
     stock: 30,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/1a/03/a1/1a03a1301a12dc7c92309213be316043.jpg",
   },
   {
     id: 33,
@@ -263,7 +263,7 @@ const productos = [
     precio: 20000,
     categoria: "Soportes y Conectividad",
     stock: 40,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/18/02/a8/1802a8918961fed05a08dc34dd584142.jpg",
   },
   {
     id: 34,
@@ -271,7 +271,7 @@ const productos = [
     precio: 95000,
     categoria: "Soportes y Conectividad",
     stock: 15,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/b6/2c/07/b62c07d0dbab38779bb66c3aec5bb7c1.jpg",
   },
   {
     id: 35,
@@ -279,7 +279,7 @@ const productos = [
     precio: 35000,
     categoria: "Soportes y Conectividad",
     stock: 25,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/1e/04/19/1e04196cbb409804f754e37454143e2c.jpg",
   },
   {
     id: 36,
@@ -287,7 +287,7 @@ const productos = [
     precio: 60000,
     categoria: "Soportes y Conectividad",
     stock: 30,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/35/82/6e/35826e405d5fdef3b6db9ba29a0d19ba.jpg",
   },
   {
     id: 37,
@@ -295,7 +295,7 @@ const productos = [
     precio: 85000,
     categoria: "Soportes y Conectividad",
     stock: 15,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/7b/00/51/7b0051334a80b474c1e889b2fa038e32.jpg",
   },
   {
     id: 38,
@@ -303,7 +303,7 @@ const productos = [
     precio: 110000,
     categoria: "Soportes y Conectividad",
     stock: 20,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/11/5a/32/115a32861bc99d86a3660d3bd97d7410.jpg",
   },
   {
     id: 39,
@@ -311,7 +311,7 @@ const productos = [
     precio: 30000,
     categoria: "Soportes y Conectividad",
     stock: 25,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/564x/fe/fd/98/fefd985abbaeef268f57022ac4dd21e1.jpg",
   },
   {
     id: 40,
@@ -319,7 +319,7 @@ const productos = [
     precio: 140000,
     categoria: "Soportes y Conectividad",
     stock: 18,
-    url: "imagen del producto",
+    url: "https://i.pinimg.com/736x/47/de/f5/47def5ac3cf1c3fefa3a5de61703a046.jpg",
   },
 ];
 
