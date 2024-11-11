@@ -233,7 +233,7 @@ footer {
   }
 
   #tabla-carrito th {
-    background-color: #4a148c; /* Púrpura oscuro */
+    background-color: #4a148c; 
     color: white;
   }
 
@@ -247,25 +247,25 @@ footer {
   }
 
   button#cancelar-compra {
-    background-color: #e53935; /* Rojo */
+    background-color: #ff6606db; 
     color: white;
   }
 
   button#confirmar-compra {
-    background-color: #43a047; /* Verde */
+    background-color: #9f16fa;
     color: white;
   }
 
   button#limpiar-form {
-    background-color: #ffb300; /* Amarillo */
-    color: black;
+    background-color: #23b6fb; 
+    color: rgb(255, 254, 254);
   }
 
   button:hover {
     opacity: 0.9;
   }
 
-  /* Formulario de tarjeta de crédito */
+  
   .form-tarjeta {
     margin-top: 20px;
   }
@@ -288,7 +288,7 @@ footer {
     border-radius: 5px;
   }
 
-  /* Estilo de la caja de resumen */
+  
   .seccion-derecha h2 {
     font-size: 1.5em;
     margin-bottom: 20px;

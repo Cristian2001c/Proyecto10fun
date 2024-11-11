@@ -323,12 +323,13 @@ const productos = [
   },
 ];
 
-const versionActual = "1.1"; // Cambia este valor cada vez que actualices los productos
+const versionActual = "1.3"; // IMPORTANTE......Cambiar este valor cada vez que actualice los productos o imagenes
 
 if (localStorage.getItem("versionProductos") !== versionActual) {
   localStorage.setItem("productos", JSON.stringify(productos));
   localStorage.setItem("versionProductos", versionActual);
 }
+
 // Guardar los productos en el localStorage si no existen
 if (!localStorage.getItem("productos")) {
   localStorage.setItem("productos", JSON.stringify(productos));
@@ -376,7 +377,7 @@ function manejarProductos() {
     }
   }
 
-  // Mostrar detalles del producto seleccionado
+  // AQUI Mostramos los detalles del producto seleccionado
   window.verDetalleProducto = function (id) {
     const productos = JSON.parse(localStorage.getItem("productos")) || [];
     const producto = productos.find((p) => p.id === id);
@@ -401,7 +402,7 @@ function manejarProductos() {
     document.getElementById("ver-detalle").style.display = "block";
   };
 
-  // Filtrar productos
+  // Aqui filtra los productos
   document
     .getElementById("filtrar")
     .addEventListener("click", filtrarProductos);
@@ -436,7 +437,7 @@ function manejarProductos() {
     productosMostrados = productosFiltrados.length;
   }
 
-  // Limpiar filtros y recargar productos
+  //Aqui limpia filtros y recargar productos
   document.getElementById("limpiar-filtros").addEventListener("click", () => {
     document.getElementById("filtro-categoria").value = "";
     document.getElementById("filtro-nombre").value = "";
@@ -477,12 +478,12 @@ function manejarProductos() {
     }
   });
 
-  // Completar compra (redirigir al carrito)
+  // Completar compra (redirigir a la tercera vista)
   document.getElementById("completar-compra").addEventListener("click", () => {
     window.location.href = "carrito.html"; // Redirige a una página de carrito (asegúrate de crear esta página)
   });
 
-  // Cancelar compra y volver a la vista de requerimientos
+  // Cancelar compra y vuelve a la primera vista
   document.getElementById("cancelar-compra").addEventListener("click", () => {
     window.location.href = "index.html";
   });

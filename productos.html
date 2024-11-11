@@ -9,14 +9,12 @@
   <body>
     <header>
       <h1>GlamByte S'tore</h1>
+      <h3>Tienda Online</h3>
     </header>
-
     <main class="vista">
-      <!-- Contenedor de productos y detalles alineados en una sola fila -->
-      <div id="contenedor-productos">
-        <!-- Sección de productos con tarjetas -->
+      <div id="contenedor-productos" class="contenedor-flex">
         <div id="tarjetas-productos">
-          <h2>Filtrar Productos</h2>
+          <h2>Selección de Productos por Categoria</h2>
           <!-- Filtros para filtrar productos por categoría o nombre -->
           <div id="filtros">
             <div class="filtros-contenedor">
@@ -37,15 +35,11 @@
             </div>
           </div>
 
-          <!-- Contenedor de tarjetas de productos -->
-          <div id="contenedor-tarjetas" class="grid-tarjetas">
-            <!-- Las tarjetas de productos se cargarán aquí mediante JavaScript -->
-          </div>
+          <div id="contenedor-tarjetas" class="grid-tarjetas"></div>
         </div>
 
-        <!-- Detalles del producto seleccionado -->
         <div id="ver-detalle" style="display: none">
-          <h3>Detalles del Producto</h3>
+          <h3>Proceso de Compra y Detalles del Producto</h3>
           <!-- Imagen del producto -->
           <img
             id="imagen-detalle"
@@ -63,7 +57,6 @@
           />
           <button id="agregar-carrito">Agregar al Carrito</button>
 
-          <!-- Navegación inferior para acciones, justo debajo de los detalles -->
           <nav id="acciones-compra">
             <button id="cancelar-compra">Cancelar Compra</button>
             <button id="completar-compra">Completar Compra</button>
@@ -71,11 +64,9 @@
         </div>
       </div>
     </main>
-
     <footer>
-      <p>&copy; 2024 Tienda Virtual. GlamByte S'tore.</p>
+      <p>&copy; 2024 Tienda Online. GlamByte S'tore.</p>
     </footer>
-
     <script src="productos.js"></script>
   </body>
 </html>
